@@ -1,5 +1,8 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
+    { "source": "/operator", "destination": "/operator/index.html" },
+    { "source": "/operator/((?!assets/).*)", "destination": "/operator/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
